@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Title -->
+    <title>Calcular IMC</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <h1>Calculadora de IMC</h1>
+    </header>
+
+    <!-- Section calcImc -->
+    <section class="container">
+        <!-- Inputs para adicionar peso e altura -->
+        <div class="areaInput">
+            <!-- Peso -->
+            <div class="input-group">
+                <label for="txtPeso">Seu peso:</label>
+                <input type="text" name="peso" id="txtPeso" class="input-control" autofocus>
+            </div>
+            <!-- Altura -->
+            <div class="input-group">
+                <label for="txtAltura">Sua altura:</label>
+                <input type="text" name="altura" id="txtAltura" class="input-control">
+            </div>
+        </div><!-- /.areaInput -->
+        <button type="button" id="btnCalc">Calcular</button>
+        <!-- IMC Resultado -->
+        <div class="area-resultImc">
+            <h2 id="valorImc">0</h2>
+            <h3>Resultado: <span id="msgImc"></span></h3>
+        </div><!-- /.resultImc -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
